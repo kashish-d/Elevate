@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import Product from "./Product";
+import { BASE_URL } from "../requestMethods";
 
 const Container = styled.div`
 	padding: 20px;
@@ -19,10 +20,10 @@ function Products({ cat, filters, sort, homePage }) {
 			try {
 				const res = await axios.get(
 					cat
-						? `http://localhost:5000/api/products?category=${cat}`
+						? `${BASE_URL}products?category=${cat}`
 						: homePage
-						? "http://localhost:5000/api/products"
-						: "http://localhost:5000/api/products?new=true"
+						? `${BASE_URL}products`
+						: `${BASE_URL}products?new=true`
 				);
 				setProducts(res.data);
 			} catch (err) {

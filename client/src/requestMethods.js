@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/";
+export const BASE_URL = "https://elevate-40s5.onrender.com/api/";
 const TOKEN =
 	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OTM0MDBjYzY4ZGVjY2ZhZmY2N2I4MSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4ODgxNDgyNiwiZXhwIjoxNjg5MDc0MDI2fQ.T288zp3ZZe0YKdr0bTYiLy1U-qPQqo6Q_Jdj-xXF0AA";
 
