@@ -71,6 +71,16 @@ const Product = styled.div`
 const ProductDetail = styled.div`
 	flex: 2;
 	display: flex;
+	${mobile({ flexDirection: "column" })}
+`;
+
+const Divider = styled.div`
+	width: 90%;
+	margin: 5px auto 10px;
+	height: 0.5px;
+	display: none;
+	background-color: black;
+	${mobile({ display: "block" })}
 `;
 
 const Image = styled.img`
@@ -241,6 +251,7 @@ function Cart() {
 										₹ {product.price * product.quantity}
 									</ProductPrice>
 								</PriceDetail>
+								<Divider />
 							</Product>
 						))}
 						<Hr />

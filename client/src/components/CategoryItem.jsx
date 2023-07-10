@@ -14,7 +14,7 @@ const Image = styled.img`
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	${mobile({ height: "20vh" })}
+	${mobile({ height: "40vh" })}
 `;
 
 const Info = styled.div`

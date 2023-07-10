@@ -6,6 +6,7 @@ import {
 import React from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
+import { mobile } from "../responsive";
 
 const Info = styled.div`
 	opacity: 0;
@@ -37,6 +38,8 @@ const Container = styled.div`
 	&:hover ${Info} {
 		opacity: 1;
 	}
+
+	${mobile({ display: "300px" })}
 `;
 
 const Circle = styled.div`

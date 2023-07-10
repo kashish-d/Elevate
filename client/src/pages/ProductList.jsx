@@ -18,6 +18,7 @@ const Title = styled.h1`
 const FilterContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
+	${mobile({ justifyContent: "space-evenly", padding: "20px" })}
 `;
 
 const Filter = styled.div`
